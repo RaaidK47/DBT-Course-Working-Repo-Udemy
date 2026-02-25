@@ -1,0 +1,16 @@
+exposures:
+  - name: executive_dashboard
+    label: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://f1a85099.us2a.app.preset.io/superset/dashboard/8/?native_filters_key=HzWLUxuk1x4
+    description: Executive Dashboard about Airbnb listings and hosts
+
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: M Raaid Khan
+      email: raaid.khan47@gmail.com
