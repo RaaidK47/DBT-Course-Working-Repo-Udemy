@@ -94,3 +94,16 @@ Runtime Error
 [0m18:22:08.258102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A795839D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A79583BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A79583B10>]}
 [0m18:22:08.258102 [debug] [MainThread]: Flushing usage events
 [0m18:22:09.405494 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:20:58.795880 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 22:20:58.823992 | 78b1ca37-9508-47e0-b490-045701bae495 ==============================
+[0m22:20:58.823992 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:20:58.824995 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\raaid\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run-operation learn_variables --vars {user_name: RaaidK47}', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m22:20:58.824995 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Extras\Data Warehousing\The Complete dbt (Data Build Tool) Bootcamp - Zero to Hero - Udemy\Working Folder\DBT-Course-Working-Repo-Udemy\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:20:58.825994 [debug] [MainThread]: Command `dbt run-operation` failed at 22:20:58.825994 after 0.09 seconds
+[0m22:20:58.827031 [debug] [MainThread]: Flushing usage events

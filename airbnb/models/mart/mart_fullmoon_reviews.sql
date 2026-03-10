@@ -3,7 +3,8 @@
 ) }}
 
 WITH fct_reviews AS (
-    SELECT * FROM {{ ref('fct_reviews') }}
+    SELECT * FROM {{ ref("fct_reviews") }}
+
 ),
 full_moon_dates AS (
     SELECT * FROM {{ ref('seed_full_moon_dates') }}
